@@ -24,6 +24,12 @@ enum layers {
     _BEAKL=3,
 };
 
+const uint16_t PROGMEM semicolon_combo[] = {KC_S, KC_T, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(semicolon_combo, KC_SCLN)
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*
  * Base Layer 0: Colemak-DH / OU
